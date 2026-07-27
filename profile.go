@@ -21,46 +21,52 @@ type ChromeProfile struct {
 
 var profiles = []ChromeProfile{
 	{
-		Name: "Profile 2", // profile xs kins  //
+		Name: "Profile 9", // profile xs kins  //
+		URLs: []string{
+			"https://account.accurate.id/manage",
+		},
+	},
+	{
+		Name: "Profile 19", // profile kins ungu //
+		URLs: []string{
+			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+		},
+	},
+	{
+		Name: "Profile 11", // profile monkey tech //
+		URLs: []string{
+			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+		},
+	},
+	{
+		Name: "Profile 17", // profile smart cuy //
+		URLs: []string{
+			"https://seller.shopee.co.id/portal/sale/order",
+		},
+	},
+	{
+		Name: "Profile 1", // profile mija //
+		URLs: []string{
+			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+		},
+	},
+	{
+		Name: "Profile 22", // profile shopee ajim //
+		URLs: []string{
+			"https://seller.blibli.com/order-list",
+		},
+	},
+	{
+		Name: "Profile 3", // profile shopee ajim //
+		URLs: []string{
+			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+		},
+	},
+	{
+		Name: "Profile 3", // profile shopee ajim //
 		URLs: []string{
 			"https://web.whatsapp.com/",
-			"https://seller.shopee.co.id/",
-			"https://seller-id.tokopedia.com/product/manage?shop_region=ID",
-		},
-	},
-	{
-		Name: "Profile 4", // profile kins ungu //
-		URLs: []string{
-			"https://www.tokopedia.com/kins-official/product",
-			"https://www.tokopedia.com/kinsofficialstore/product/",
-		},
-	},
-	{
-		Name: "Profile 5", // profile monkey tech //
-		URLs: []string{
-			"https://seller-id.tokopedia.com/product/manage?shop_region=ID",
-			"https://seller-id.tokopedia.com/promotion/marketing-tools/management?tab=1&shop_region=ID",
-		},
-	},
-	{
-		Name: "Profile 19", // profile smart cuy //
-		URLs: []string{
-			"https://seller-id.tokopedia.com/product/manage?shop_region=ID",
-			"https://seller-id.tokopedia.com/promotion/marketing-tools/management?tab=1&shop_region=ID",
-		},
-	},
-	{
-		Name: "Profile 10", // profile mija //
-		URLs: []string{
-			"https://seller-id.tokopedia.com/product/manage?shop_region=ID",
-			"https://seller-id.tokopedia.com/promotion/marketing-tools/management?tab=1&shop_region=ID",
-		},
-	},
-	{
-		Name: "Profile 21", // profile shopee ajim //
-		URLs: []string{
-			"https://seller.shopee.co.id/portal/product/list/live/all?operationSortBy=modified_time&page=1",
-			"https://seller.shopee.co.id/portal/marketing/list/discount?discountType=all&status=all&page=1",
+			"https://docs.google.com/spreadsheets/d/15RJsN291SfDFOzjO0AC4qkNevb7_WO4yEPFY3YVwsjc/edit?gid=1173214093#gid=1173214093",
 		},
 	},
 }
