@@ -6,16 +6,44 @@ import (
 	"github.com/lxn/win"
 )
 
-func MoveChromeWindow() {
-	fmt.Println("Finding Chrome window...")
-
-	_ = win.HWND(0)
+type ChromeWindow struct {
+	Handle win.HWND
+	Tittle string
 }
 
-// type WindowPosition struct {
-// 	X int32
-// 	Y int32
+func FindChromeWindows() ([]ChromeWindow, error) {
+	var chromeWindows []ChromeWindow
 
-// 	Width int32
-// 	Height int32
-// }
+	ok := win.EnumWindows(
+
+		win.WNDENUMPROC(
+
+			func(
+				hwnd win.HWND,
+				lparam win.LPARAM,
+			) win.BOOL {
+				fmt.Printf("Window Handle: %v\n", hwnd)
+
+				// judul := win.Getwindowtext(hwnd)
+
+				// if judul == "Google Chrome" {
+				// 	chromeWindows = append(chromeWindows, ChromeWindow{
+				// 		Handle: hwnd,
+				// 		Tittle: judul,
+				// 	})
+				// }
+
+				return win.TRUE
+			},
+		),
+
+		win.LPARAM(0),
+	)
+
+	if !ok {
+		fmt.Println("Gagal mengenumerasi jendela Chrome")
+
+	}
+
+	return chromeWindows, nil
+}
