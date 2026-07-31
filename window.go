@@ -1,49 +1,49 @@
-package main
+// package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"github.com/lxn/win"
-)
+// 	"github.com/lxn/win"
+// )
 
-type ChromeWindow struct {
-	Handle win.HWND
-	Tittle string
-}
+// type ChromeWindow struct {
+// 	Handle win.HWND
+// 	Tittle string
+// }
 
-func FindChromeWindows() ([]ChromeWindow, error) {
-	var chromeWindows []ChromeWindow
+// func FindChromeWindows() ([]ChromeWindow, error) {
+// 	var chromeWindows []ChromeWindow
 
-	ok := win.EnumWindows(
+// 	ok := win.EnumWindows(
 
-		win.WNDENUMPROC(
+// 		win.WNDENUMPROC(
 
-			func(
-				hwnd win.HWND,
-				lparam win.LPARAM,
-			) win.BOOL {
-				fmt.Printf("Window Handle: %v\n", hwnd)
+// 			func(
+// 				hwnd win.HWND,
+// 				lparam win.LPARAM,
+// 			) win.BOOL {
+// 				fmt.Printf("Window Handle: %v\n", hwnd)
 
-				// judul := win.Getwindowtext(hwnd)
+// 				// judul := win.Getwindowtext(hwnd)
 
-				// if judul == "Google Chrome" {
-				// 	chromeWindows = append(chromeWindows, ChromeWindow{
-				// 		Handle: hwnd,
-				// 		Tittle: judul,
-				// 	})
-				// }
+// 				// if judul == "Google Chrome" {
+// 				// 	chromeWindows = append(chromeWindows, ChromeWindow{
+// 				// 		Handle: hwnd,
+// 				// 		Tittle: judul,
+// 				// 	})
+// 				// }
 
-				return win.TRUE
-			},
-		),
+// 				return win.TRUE
+// 			},
+// 		),
 
-		win.LPARAM(0),
-	)
+// 		win.LPARAM(0),
+// 	)
 
-	if !ok {
-		fmt.Println("Gagal mengenumerasi jendela Chrome")
+// 	if !ok {
+// 		fmt.Println("Gagal mengenumerasi jendela Chrome")
 
-	}
+// 	}
 
-	return chromeWindows, nil
-}
+// 	return chromeWindows, nil
+// }
