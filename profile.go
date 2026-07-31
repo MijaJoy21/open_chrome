@@ -21,52 +21,51 @@ type ChromeProfile struct {
 
 var profiles = []ChromeProfile{
 	{
-		Name: "Profile 9", // profile xs kins  //
+		Name: "Profile 12", // profile xs kins  //
 		URLs: []string{
 			"https://account.accurate.id/manage",
 		},
 	},
 	{
-		Name: "Profile 19", // profile kins ungu //
+		Name: "Profile 8", // profile kins ungu //
 		URLs: []string{
-			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+			" https://subaccount.shopee.com/chat-distribution/shops",
 		},
 	},
 	{
-		Name: "Profile 11", // profile monkey tech //
+		Name: "Profile 17", // profile monkey tech //
 		URLs: []string{
-			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+			"https://seller-id.tokopedia.com/order?order_status[]=1&selected_sort=11&tab=to_ship",
 		},
 	},
 	{
-		Name: "Profile 17", // profile smart cuy //
+		Name: "Profile 6", // profile smart cuy //
 		URLs: []string{
-			"https://seller.shopee.co.id/portal/sale/order",
+			"https://seller-id.tokopedia.com/order?order_status[]=1&selected_sort=11&tab=to_ship&urgency[]=201",
 		},
 	},
 	{
-		Name: "Profile 1", // profile mija //
+		Name: "Profile 2", // profile mija //
 		URLs: []string{
-			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+			"https://seller-id.tokopedia.com/order?order_status[]=1&selected_sort=11&tab=to_ship",
 		},
 	},
 	{
-		Name: "Profile 22", // profile shopee ajim //
+		Name: "Profile 1", // profile shopee ajim //
 		URLs: []string{
-			"https://seller.blibli.com/order-list",
+			"https://seller-id.tokopedia.com/order?order_status[]=1&selected_sort=11&tab=to_ship&urgency[]=201",
 		},
 	},
 	{
-		Name: "Profile 3", // profile shopee ajim //
+		Name: "Profile 21", // profile shopee ajim //
 		URLs: []string{
-			"https://seller-id.tokopedia.com/order?selected_sort=6&tab=all",
+			" https://seller.blibli.com/order-list",
 		},
 	},
 	{
-		Name: "Profile 14", // profile shopee ajim //
+		Name: "Profile 18", // profile shopee ajim //
 		URLs: []string{
-			"https://web.whatsapp.com/",
-			"https://docs.google.com/spreadsheets/d/15RJsN291SfDFOzjO0AC4qkNevb7_WO4yEPFY3YVwsjc/edit?gid=1173214093#gid=1173214093",
+			" https://www.facebook.com/?locale=id_ID",
 		},
 	},
 }
