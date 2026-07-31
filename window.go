@@ -1,15 +1,13 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
+import (
+	"github.com/lxn/win"
+)
 
-// 	"github.com/lxn/win"
-// )
-
-// type ChromeWindow struct {
-// 	Handle win.HWND
-// 	Tittle string
-// }
+type ChromeWindow struct {
+	Handle win.HWND
+	Tittle string
+}
 
 // func FindChromeWindows() ([]ChromeWindow, error) {
 // 	var chromeWindows []ChromeWindow
